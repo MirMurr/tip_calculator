@@ -107,12 +107,12 @@ label {
 /*TIPS CONTAINER END*/
 
 #bill {
-    background-image: url(./images/icon-dollar.svg);
+    background-image: url(./icon-dollar.svg);
     
 }
 
 #num-of-people {
-    background-image: url(./images/icon-person.svg);
+    background-image: url(./icon-person.svg);
     margin-top: 0.5rem;
 }
 
