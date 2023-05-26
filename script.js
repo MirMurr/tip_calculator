@@ -8,27 +8,6 @@ const resetBtn = document.querySelector('.reset-btn');
 const error = document.getElementById('error');
 
 
-// Eventlisteners 
-billInput.addEventListener("input", billInputFun);
-billInput.addEventListener("click", () => {
-    billInput.value = "";
-});
-
-peopleInput.addEventListener("input", peopleInputFun);
-
-peopleInput.addEventListener("click", () => {
-    peopleInput.value = "";
-});
-
-tips.forEach(function(val) {
-    val.addEventListener("click", handleClick);
-});
-
-tipCustom.addEventListener("input", tipInputFun);
-
-resetBtn.addEventListener("click", reset);
-
-
 //setting the values - these will be displayed
 billInput.value = '0.0';
 peopleInput.value = '1';
@@ -107,3 +86,24 @@ function reset() {
     peopleInputFun()
     tipCustom.value = "";
 }
+
+
+// Eventlisteners 
+billInput.addEventListener("input", billInputFun);
+billInput.addEventListener("click", () => {
+    billInput.value = "";
+});
+
+peopleInput.addEventListener("input", peopleInputFun);
+
+peopleInput.addEventListener("click", () => {
+    peopleInput.value = "";
+});
+
+tips.forEach(function(val) {
+    val.addEventListener("click", handleClick);
+});
+
+tipCustom.addEventListener("input", tipInputFun);
+
+resetBtn.addEventListener("click", reset);
