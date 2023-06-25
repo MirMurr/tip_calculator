@@ -85,7 +85,9 @@ input::-webkit-inner-spin-button {
 
 ### Useful resources
 
-- [CodeAgam YouTube chanel](https://www.youtube.com/watch?v=etYv-pPfol4) - This helped me withe the JS part, when I got stuck at the part when you click on the different tip amounts and calculate the tip value with the different percentages.
+- W3Schools Js resources
+- MDN JS resources
+- Stackoverflow
 - [Flexbox guide] (https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - general help with flexbox layout
 
 ## Author
@@ -96,4 +98,3 @@ input::-webkit-inner-spin-button {
 
 ## Acknowledgments
 
-Thanks a lot for CodeAgam Youtube chanel, it was a great help with JS. 
