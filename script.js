@@ -21,13 +21,13 @@ let tipValue = 0.15;
 
 
 //Bill input function
-function billInputFun() {
+function billInputFunction() {
     billValue = parseFloat(billInput.value)
     calculateTip();
 }
 
 //Number of people & error message if people < 1
-function peopleInputFun() {
+function peopleInputFunction() {
     peopleValue = parseFloat(peopleInput.value)
     
 
@@ -42,7 +42,7 @@ function peopleInputFun() {
 }
 
 //Calculates custom tip
-function tipInputFun() {
+function tipInputFunction() {
     tipValue = parseFloat(tipCustom.value / 100);
 
     tips.forEach(function(val) {
@@ -85,12 +85,12 @@ function reset() {
 
 
 // Eventlisteners 
-billInput.addEventListener("input", billInputFun);
+billInput.addEventListener("input", billInputFunction);
 billInput.addEventListener("click", () => {
     billInput.value = "";
 });
 
-peopleInput.addEventListener("input", peopleInputFun);
+peopleInput.addEventListener("input", peopleInputFunction);
 
 peopleInput.addEventListener("click", () => {
     peopleInput.value = "";
@@ -100,6 +100,6 @@ tips.forEach(function(val) {
     val.addEventListener("click", handleClick);
 });
 
-tipCustom.addEventListener("input", tipInputFun);
+tipCustom.addEventListener("input", tipInputFunction);
 
 resetBtn.addEventListener("click", reset);
