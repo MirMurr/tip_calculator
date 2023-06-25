@@ -26,7 +26,6 @@ function billInputFun() {
     calculateTip();
 }
 
-
 //Number of people & error message if people < 1
 function peopleInputFun() {
     peopleValue = parseFloat(peopleInput.value)
@@ -42,7 +41,6 @@ function peopleInputFun() {
         }
 }
 
-
 //Calculates custom tip
 function tipInputFun() {
     tipValue = parseFloat(tipCustom.value / 100);
@@ -51,7 +49,6 @@ function tipInputFun() {
         val.classList.remove("active-tip");
     });
     calculateTip();
-
 }
 
 //Activates the tip numbers on click select tip section
@@ -76,7 +73,6 @@ function calculateTip() {
         totalPerPerson.innerHTML = "$" + total.toFixed(2);
     }
 }
-
 
 // Reserts all values to default
 function reset() {
