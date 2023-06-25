@@ -77,9 +77,9 @@ function calculateTip() {
 // Reserts all values to default
 function reset() {
     billInput.value = '0.0';
-    billInputFun()
+    billInputFunction()
     peopleInput.value = '1';
-    peopleInputFun()
+    peopleInputFunction()
     tipCustom.value = "";
 }
 
