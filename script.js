@@ -52,10 +52,10 @@ function tipInputFun() {
 }
 
 //Activates the tip numbers on click select tip section
-function handleClick(event) {
+function handleClick(e) {
     tips.forEach(function(val) {
         val.classList.remove("active-tip");
-        if (event.target.innerHTML == val.innerHTML) {
+        if (e.target.innerHTML == val.innerHTML) {
             val.classList.add("active-tip");
             tipValue = parseFloat(val.innerHTML) / 100; 
         }
