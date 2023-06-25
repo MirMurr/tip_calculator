@@ -45,19 +45,19 @@ function peopleInputFunction() {
 function tipInputFunction() {
     tipValue = parseFloat(tipCustom.value / 100);
 
-    tips.forEach(function(val) {
-        val.classList.remove("active-tip");
+    tips.forEach(function(tip) {
+        tip.classList.remove("active-tip");
     });
     calculateTip();
 }
 
 //Activates the tip numbers on click select tip section
 function handleClick(e) {
-    tips.forEach(function(val) {
-        val.classList.remove("active-tip");
-        if (e.target.innerHTML == val.innerHTML) {
-            val.classList.add("active-tip");
-            tipValue = parseFloat(val.innerHTML) / 100; 
+    tips.forEach(function(tip) {
+        tip.classList.remove("active-tip");
+        if (e.target.innerHTML == tip.innerHTML) {
+            tip.classList.add("active-tip");
+            tipValue = parseFloat(tip.innerHTML) / 100; 
         }
     });
     calculateTip();
@@ -96,8 +96,8 @@ peopleInput.addEventListener("click", () => {
     peopleInput.value = "";
 });
 
-tips.forEach(function(val) {
-    val.addEventListener("click", handleClick);
+tips.forEach(function(tip) {
+    tip.addEventListener("click", handleClick);
 });
 
 tipCustom.addEventListener("input", tipInputFunction);
